@@ -34,7 +34,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
   
 6. **Verify that your image was created successfully by running:**
     ```bash
-        docker images #"
+        docker images
         
 7. **Push the image to the remote Artifact Registry:**
     ```bash 

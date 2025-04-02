@@ -21,7 +21,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
    gcloud artifacts repositories create <docker_repo_name> \
        --repository-format=docker \
        --location=us-central1 \
-       --description="Docker repository for Group #"
+       --description="Docker repository for Group
        
 4. **Authenticate to the repository:**
    ```bash
@@ -38,7 +38,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
         
 7. **Push the image to the remote Artifact Registry:**
     ```bash 
-        docker push <image_tag> #"
+        docker push <image_tag>
 
 8. **Deploy the image on Cloud Run**
     ```bash
@@ -47,7 +47,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
     --platform managed \
     --region us-west1 \
     --allow-unauthenticated \
-    --set-env-vars ZILLIZ_CLOUD_TOKEN="<token>" #"
+    --set-env-vars ZILLIZ_CLOUD_TOKEN="<token>"
     
     	The ZILLIZ_CLOUD_TOKEN can be copied from the Zilliz cloud console.
     	Replace <image_tag> with your image tag.

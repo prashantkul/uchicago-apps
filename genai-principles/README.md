@@ -30,7 +30,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
 5. **Build your application as a Docker container:**
 
    ```bash
-   docker build -t us-central1-docker.pkg.dev/adsp-32027-on01/genai-docker-repo/zilliz-app:latest
+   docker build -t us-central1-docker.pkg.dev/adsp-32027-on01/<docker_repo_name>/<your_app>:latest
   
 6. **Verify that your image was created successfully by running:**
     ```bash
@@ -42,7 +42,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
 
 8. **Deploy the image on Cloud Run**
     ```bash
-     gcloud run deploy zilliz-app \
+     gcloud run deploy <your_app> \
     --image <image_tag> \
     --platform managed \
     --region us-west1 \

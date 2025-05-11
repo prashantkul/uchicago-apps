@@ -21,7 +21,7 @@ Cloud Run is a fully managed serverless platform offered by Google Cloud that al
    gcloud artifacts repositories create <docker_repo_name> \
        --repository-format=docker \
        --location=us-central1 \
-       --description="Docker repository for Group
+       --description="Docker repository for Group"
        
 4. **Authenticate to the repository:**
    ```bash
